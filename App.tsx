@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity, Switch } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity, Switch, SafeAreaView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
       
       <View style={styles.header}>
         <View>
-          <Text style={styles.title}>Interview in</Text>
-        </View>
-        <View style={styles.logoContainer}>
-          <Text style={styles.logoText}>Attract Group</Text>
+          <Text style={styles.title}>Interview in Attract Group</Text>
         </View>
       </View>
 
@@ -69,7 +66,7 @@ export default function App() {
           © 2011 - 2022 Attract Group - Web and Mobile Development Company. All Rights Reserved
         </Text>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -79,13 +76,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   header: {
-    padding: 20,
+    padding: 10,
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'center',
   },
   title: {
-    fontSize: 24,
+    fontSize: 14,
     marginRight: 10,
   },
   logoContainer: {
@@ -130,7 +127,7 @@ const styles = StyleSheet.create({
   cardImage: {
     width: 300,
     maxWidth: 300,
-    height: 200,
+    height: 100,
   },
   cardTitle: {
     fontSize: 18,
